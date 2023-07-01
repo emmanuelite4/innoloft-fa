@@ -8,7 +8,7 @@ export function Container(props: ContainerProps) {
   const padding = !props.noPadding ? " py-5 px-2.5 md:px-5" : "";
   return (
     <div
-      className={`rounded-[6px] border border-dark-500 overflow-hidden${padding}`}
+      className={`rounded-[6px] border border-dark-500 bg-white overflow-hidden${padding}`}
     >
       {props.children}
     </div>

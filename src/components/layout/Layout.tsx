@@ -1,7 +1,20 @@
 import { Header } from "components/index.ts";
 import { Outlet } from "react-router-dom";
+import { useGetConfigurationQuery } from "redux";
 
 export function Layout() {
+  const { isLoading } = useGetConfigurationQuery(process.env.APP_ID || 1);
+
+  if (isLoading)
+    return (
+      <div
+        className={
+          "h-screen flex items-center justify-center bg-primary text-white"
+        }
+      >
+        App loading...
+      </div>
+    );
   return (
     <div className={"bg-dark-900"}>
       <Header />

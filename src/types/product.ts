@@ -38,6 +38,11 @@ export type IProductCompany = {
   address: IAddress;
 };
 
+export type IProductTRL = {
+  id: string;
+  name: string;
+  description?: string | null;
+};
 export type IProduct = {
   id: number;
   name: string;
@@ -50,12 +55,15 @@ export type IProduct = {
   categories: IProductCategory[];
   implementationEffortText: null;
   investmentEffort: string;
-  trl: {
-    id: number;
-    name: string;
-  };
+  trl: IProductTRL;
   video: string;
-  user: IUser;
+  user: IProductUser;
   company: IProductCompany;
   businessModels: IProductBusinessModel[];
+};
+
+export type ProductUpdatePayload = {
+  name?: string;
+  description?: string;
+  id: number | string;
 };

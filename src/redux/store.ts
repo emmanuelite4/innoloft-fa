@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { apiSlice } from "./slices";
+import { layoutReducer } from "redux/slices";
 
 export const store = configureStore({
   reducer: {
+    layout: layoutReducer,
     [apiSlice.reducerPath]: apiSlice.reducer,
   },
   middleware: (getDefaultMiddleware) =>

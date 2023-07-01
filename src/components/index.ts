@@ -4,3 +4,4 @@ export * from "./product";
 export * from "./button";
 export * from "./layout";
 export * from "./typography";
+export * from "./product-edit";
