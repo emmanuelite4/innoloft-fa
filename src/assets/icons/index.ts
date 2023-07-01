@@ -1,0 +1,14 @@
+export { default as AccordionDownLightIcon } from "./accordion-down-light.svg";
+export { default as CheckIcon } from "./check.svg";
+export { default as ChevronRightIcon } from "./chevron_right.svg";
+export { default as ClockIcon } from "./clock.svg";
+export { default as DeleteIcon } from "./delete.svg";
+export { default as EditIcon } from "./edit.svg";
+export { default as GroupIcon } from "./group.svg";
+export { default as HomeIcon } from "./edit.svg";
+export { default as InvestorIcon } from "./investor.svg";
+export { default as LocationIcon } from "./location.svg";
+export { default as MessengerIcon } from "./messenger.svg";
+export { default as NotificationsIcon } from "./notifications.svg";
+export { default as OrganizationIcon } from "./organizations.svg";
+export { default as PatentIcon } from "./patent.svg";
