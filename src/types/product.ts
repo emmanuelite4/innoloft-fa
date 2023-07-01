@@ -66,4 +66,5 @@ export type ProductUpdatePayload = {
   name?: string;
   description?: string;
   id: number | string;
+  video?: string;
 };

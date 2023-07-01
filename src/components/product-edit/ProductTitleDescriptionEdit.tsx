@@ -1,4 +1,4 @@
-import { RemirrorEditor } from "components/remirror";
+import { RemirrorEditor } from "components/input";
 import { Formik } from "formik";
 import { useUpdateProductByIdMutation } from "redux";
 import { TypographyTitleClasses } from "components/typography";

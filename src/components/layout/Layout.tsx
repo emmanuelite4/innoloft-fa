@@ -18,7 +18,7 @@ export function Layout() {
   return (
     <div className={"bg-dark-900"}>
       <Header />
-      <div className={"px-2.5 py-5"}>
+      <div className={"px-2.5 py-5 max-w-[1130px] mx-auto"}>
         <Outlet />
       </div>
     </div>
