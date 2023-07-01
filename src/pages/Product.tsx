@@ -23,9 +23,11 @@ export function Product() {
 
   return (
     <div>
-      <Link to={`/product/${productId}/edit`}>
-        <Button>Edit</Button>
-      </Link>
+      <div className={"flex md:justify-end"}>
+        <Link to={`/product/${productId}/edit`}>
+          <Button>Edit</Button>
+        </Link>
+      </div>
       <div className={"my-5"}>
         <Container noPadding>
           <div className={"flex flex-col md:flex-row"}>
