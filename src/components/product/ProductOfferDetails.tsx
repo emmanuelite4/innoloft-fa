@@ -1,6 +1,7 @@
 import { ClockIcon, DevIcon, InvestorIcon, StrategyIcon } from "assets";
 import { IProduct } from "types";
 import { Title } from "components/typography";
+import { Container } from "components/layout";
 
 enum OfferKeyEnums {
   TECHNOLOGY = "technology",
@@ -69,7 +70,7 @@ export function ProductOfferDetails(props: IProduct) {
   };
 
   return (
-    <div>
+    <Container>
       <Title>Offer details</Title>
       <div className={"grid grid-cols-1 md:grid-cols-2 gap-5 mt-5"}>
         {OFFERS.map((item) => (
@@ -81,6 +82,6 @@ export function ProductOfferDetails(props: IProduct) {
           />
         ))}
       </div>
-    </div>
+    </Container>
   );
 }

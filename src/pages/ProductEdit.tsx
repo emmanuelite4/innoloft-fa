@@ -7,6 +7,7 @@ import {
   ProductTitleDescriptionEdit,
 } from "components";
 import { ProductVideoEdit } from "components/product-edit/ProductVideo.tsx";
+import { ProductOfferDetailsEdit } from "components/product-edit/ProductOfferDetailsEdit.tsx";
 
 export function ProductEdit() {
   const { productId } = useParams();
@@ -39,7 +40,10 @@ export function ProductEdit() {
         </Container>
       </div>
       <div>
-        <ProductVideoEdit video={data.video} />
+        <ProductVideoEdit video={data.video} id={data.id} />
+      </div>
+      <div className={"my-5"}>
+        <ProductOfferDetailsEdit {...data} trlList={trlQuery.data} />
       </div>
     </div>
   );

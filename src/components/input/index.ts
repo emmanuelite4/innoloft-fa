@@ -1,1 +1,2 @@
-export * from "./RemirrorEditor.tsx";
+export * from "./RemirrorEditor";
+export * from "./Input";

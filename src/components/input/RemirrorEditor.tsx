@@ -14,31 +14,6 @@ interface Props {
   defaultValue?: string;
 }
 
-// const Root = styled.div`
-//   .remirror-theme {
-//     .ProseMirror {
-//       border: none !important;
-//       box-shadow: none !important;
-//
-//       border-radius: 12px;
-//       overflow: auto;
-//       max-height: 120px;
-//
-//       ${tw`bg-neutral-07 text-neutral-02`}
-//       font-size: 14px;
-//
-//       &:focus-within {
-//         border: 2px solid !important;
-//         ${tw`!border-primary`}
-//       }
-//     }
-//   }
-//
-//   .remirror-editor-wrapper {
-//     padding-top: 0 !important;
-//   }
-// `;
-
 export function RemirrorEditor({ onChange, defaultValue }: Props) {
   const {
     manager,

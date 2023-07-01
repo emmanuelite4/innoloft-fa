@@ -5,7 +5,7 @@ import { useUpdateProductByIdMutation } from "redux";
 import { FormEvent, useState } from "react";
 import { Input } from "components/input/Input.tsx";
 
-export function ProductVideoEdit(props: { id: string; video: string }) {
+export function ProductVideoEdit(props: { id: number; video: string }) {
   const { id, video } = props;
   const [mutate] = useUpdateProductByIdMutation();
   const [value, setValue] = useState(video);

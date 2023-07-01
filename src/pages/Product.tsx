@@ -44,14 +44,11 @@ export function Product() {
           </div>
         </Container>
       </div>
+      <ProductVideo youtubeLink={data.video} />
+
       <div className={"my-5"}>
-        <Container>
-          <ProductVideo youtubeLink={data.video} />
-        </Container>
-      </div>
-      <Container>
         <ProductOfferDetails {...data} />
-      </Container>
+      </div>
     </div>
   );
 }

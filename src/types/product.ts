@@ -1,9 +1,9 @@
-type IProductCategory = {
+export type IProductCategory = {
   id: number;
   name: string;
 };
 
-type IProductBusinessModel = {
+export type IProductBusinessModel = {
   id: number;
   name: string;
 };
@@ -67,4 +67,14 @@ export type ProductUpdatePayload = {
   description?: string;
   id: number | string;
   video?: string;
+  businessModels?: IProductBusinessModel[];
+  trl?: IProductTRL;
+  categories?: IProductCategory[];
 };
+
+export enum OfferKeyEnums {
+  TECHNOLOGY = "technology",
+  BUSINESS_MODELS = "businessModels",
+  IMPLEMENTATION_TIME = "implementationTime",
+  COST = "cost",
+}
