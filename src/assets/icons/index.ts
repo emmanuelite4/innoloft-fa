@@ -1,5 +1,6 @@
 export { default as AccordionDownLightIcon } from "./accordion-down-light.svg";
 export { default as CheckIcon } from "./check.svg";
+export { default as DevIcon } from "./dev.svg";
 export { default as ChevronRightIcon } from "./chevron_right.svg";
 export { default as ClockIcon } from "./clock.svg";
 export { default as DeleteIcon } from "./delete.svg";
@@ -13,3 +14,4 @@ export { default as NotificationsIcon } from "./notifications.svg";
 export { default as OrganizationIcon } from "./organizations.svg";
 export { default as PatentIcon } from "./patent.svg";
 export { default as SearchIcon } from "./search.svg";
+export { default as StrategyIcon } from "./strategy.svg";

@@ -1,12 +1,9 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { VITE_API_BASE_URL } from "utils/env";
+import { IProduct } from "types";
 
 const baseQuery = fetchBaseQuery({
   baseUrl: VITE_API_BASE_URL,
-  prepareHeaders(headers) {
-    return headers;
-  },
-  credentials: "include",
 });
 
 enum TagTypesEnum {
@@ -19,8 +16,8 @@ export const apiSlice = createApi({
   baseQuery: baseQuery,
   tagTypes: Object.values(TagTypesEnum),
   endpoints: (builder) => ({
-    getProductById: builder.query({
-      query: (id: number) => `/product/${id}/`,
+    getProductById: builder.query<IProduct, number | string>({
+      query: (id) => `/product/${id}/`,
       providesTags: (_, __, id) => [{ type: TagTypesEnum.PRODUCT, id }],
     }),
     updateProductById: builder.mutation<boolean, any>({

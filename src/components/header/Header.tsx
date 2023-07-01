@@ -1,6 +1,6 @@
 import { Logo } from "assets";
-import { SearchInput } from "components/header/SearchInput.tsx";
-import { HeaderActions } from "components/header/Actions.tsx";
+import { SearchInput } from "./SearchInput";
+import { HeaderActions } from "./Actions";
 
 export function Header() {
   return (
@@ -13,7 +13,9 @@ export function Header() {
       <div className={"hidden md:block"}>
         <SearchInput />
       </div>
-      <HeaderActions />
+      <div className={"hidden md:block"}>
+        <HeaderActions />
+      </div>
     </div>
   );
 }

@@ -3,21 +3,21 @@ import App from "App";
 import { Layout } from "components";
 import { Dashboard, Product, ProductEdit } from "pages";
 
-const ROUTES = [
-  { path: "/", element: <Dashboard /> },
-  { path: "/product/:id", element: <Product /> },
-  { path: "/product/:id/edit", element: <ProductEdit /> },
-];
-
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
       {
         element: <Layout />,
-        children: ROUTES,
+        children: [
+          { path: "/", element: <Dashboard /> },
+          { path: "/product/:productId", element: <Product /> },
+          { path: "/product/:productId/edit", element: <ProductEdit /> },
+        ],
       },
     ],
   },
 ]);
+
+export default router;
