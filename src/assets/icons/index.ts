@@ -12,3 +12,4 @@ export { default as MessengerIcon } from "./messenger.svg";
 export { default as NotificationsIcon } from "./notifications.svg";
 export { default as OrganizationIcon } from "./organizations.svg";
 export { default as PatentIcon } from "./patent.svg";
+export { default as SearchIcon } from "./search.svg";
